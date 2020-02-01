@@ -1,0 +1,23 @@
+body {
+	margin: 0px;
+}
+
+.bkNavbar {
+	height: 60px;
+	background-color: white;
+	color: darkgreen;
+	font-size: 24px;
+	font-weight: bold;
+	border-bottom: solid;
+	border-bottom-color: #2b386f;
+	border-bottom-width: 5px;
+	padding: 10px 12px 0 0;
+}
+
+.bkNavbar__logo {
+	
+}
+
+.bkNavbar__link {
+	
+}
