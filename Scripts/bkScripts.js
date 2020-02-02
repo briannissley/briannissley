@@ -10,7 +10,7 @@ var $$ = {
 	}
 };
 
-var config = {
+var bkConfig = {
 	bkNavbar: {
 		build: function () {
 			$.each($$.navbar.tabs, function (index, tabName) {
@@ -28,9 +28,16 @@ var config = {
 };
 
 var bk = {
-	
+	buildBlocks: function () {
+		$.each(bkConfig, function (block, options) {
+			if (options.build !== undefined) {
+				options.build();
+			}
+		});
+	}
 };
 
 $(document).ready(function () {
     console.log('document ready');
+	bk.buildBlocks();
 });
