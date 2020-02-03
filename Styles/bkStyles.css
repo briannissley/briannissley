@@ -1,5 +1,7 @@
 body {
 	margin: 0px;
+	height: 100%;
+	overflow: hidden;
 }
 
 .bkNavbar {
@@ -124,3 +126,17 @@ a:focus, a:active {
             color: #2b386f;
             text-decoration: none;
         }
+
+.bkPage {
+	display: none;
+	width: 100%;
+	height: calc(100% - 70px);
+	padding: 5px;
+}
+	.bkPage--active {
+		display: inline-block;
+	}
+
+
+
+
